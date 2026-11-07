@@ -1,4 +1,33 @@
-.terraform/
 *.exe
 *.zip
 .terraform.lock.hcl
+# Local .terraform directories (contains provider plugins and modules)
+.terraform/
+
+# .terraform.lock.hcl stores provider locks. 
+# RECOMMENDED: Do NOT ignore this file; commit it to Git so team members use the same provider versions.
+# .terraform.lock.hcl
+
+# Local state files and crash logs
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Override files (used for local modifications, processed after main files)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local environment variables and sensitive tfvars (variables containing secrets)
+*.tfvars
+*.tfvars.json
+.envrc
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Plan outputs (can contain sensitive state information)
+*tfplan*
